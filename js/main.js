@@ -4,10 +4,10 @@ const closeBtn = document.querySelector('.mnav__close-btn');
 const closeBtnIcon = document.querySelector('.mnav__close-btn-icon');
 
 // Define classes
-const navOpendClass = "left-0";
-const navClosedClass = "-left-[300px]";
-const arrowLeftClass = "ri-arrow-left-s-line";
-const arrowRightClass = "ri-arrow-right-s-line";
+const navOpendClass = 'left-0';
+const navClosedClass = '-left-[300px]';
+const arrowLeftClass = 'ri-arrow-left-s-line';
+const arrowRightClass = 'ri-arrow-right-s-line';
 
 // Toggle navigation
 closeBtn.addEventListener('click', () => {
