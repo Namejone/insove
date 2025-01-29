@@ -29,3 +29,21 @@ closeBtn.addEventListener('click', () => {
     closeBtnIcon.classList.add(arrowRightClass);
   }
 });
+
+// testimonial-slider
+const swiper = new Swiper('.testimonial__active', {
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
+// team-slider
+const swiperTeam = new Swiper('.team__slider', {
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
