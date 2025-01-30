@@ -47,3 +47,15 @@ const swiperTeam = new Swiper('.team__slider', {
     clickable: true,
   },
 });
+
+// faq
+const faqItems = document.querySelectorAll('.faq__item');
+faqItems.forEach((item) => {
+  const faqBtn = item.querySelector('.faq__btn');
+  item.addEventListener('click', () => {
+    const isOpen = item.classList.toggle('open');
+    const iconClass = isOpen ? 'ri-subtract-fill' : 'ri-add-fill';
+    const iconElement = faqBtn.querySelector('i');
+    iconElement.classList = `${iconClass} text-2xl`;
+  });
+});
